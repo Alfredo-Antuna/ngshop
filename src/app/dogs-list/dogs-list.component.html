@@ -1,11 +1,10 @@
-<h1>Our Dogs!</h1>
-<table class="table table-bordered border-primary table-striped">
-  <tr>
-    <th class="fs-2">Name</th>
-    <th class="fs-2">Image</th>
-    <th class="fs-2">Interact</th>
-  </tr>
-  <tr *ngFor="let dog of dogs">
-    <app-dog [dog]="dog" [user]="user"></app-dog>
-  </tr>
-</table>
+<h1 class="d-flex justify-content-center bg-success">Our Dogs!</h1>
+<div class="container">
+  <div class="row g-2 bg-success">
+    <div class="col-4 fs-3">Name</div>
+    <div class="col-4 fs-3">Image</div>
+    <div class="col-4 fs-3">Interact</div>
+    <hr>
+  </div>
+    <app-dog  *ngFor="let dog of dogs" [dog]="dog" [user]="user"></app-dog>
+  </div>

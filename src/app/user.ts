@@ -1,6 +1,7 @@
 export class User {
   public dogsFav: string[];
 
+
   constructor() {
     this.dogsFav = [];
   }
@@ -20,4 +21,5 @@ export class User {
     }
     return false;
   }
+
 }

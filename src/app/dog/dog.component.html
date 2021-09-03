@@ -1,7 +1,8 @@
-<td class="min-vw-33">Name:{{ dog.name }}</td>
-<td class="min-vw-33"><img [src]="dog.image" class="w-6" /></td>
+<div class="row g-2 bg-success">
+<div class="col-4 p-2">Name:{{ dog.name }}</div>
+<div class="col-4 p-2"><img [src]="dog.image" class="w-50" /></div>
 
-<td>
+<div class="col-4">
   <button class="btn btn-secondary">Like</button>
   <button
     class="btn btn-primary"
@@ -10,21 +11,6 @@
   >
     Favorite
   </button>
-</td>
-<table>
-    <tr>
-      <th>Company</th>
-      <th>Contact</th>
-      <th>Country</th>
-    </tr>
-    <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>Maria Anders</td>
-      <td>Germany</td>
-    </tr>
-    <tr>
-      <td>Centro comercial Moctezuma</td>
-      <td>Francisco Chang</td>
-      <td>Mexico</td>
-    </tr>
-  </table> 
+</div>
+</div>
+

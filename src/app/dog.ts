@@ -7,4 +7,5 @@ export class Dog {
     name: string;
     thumbnail: string;
     image: string;
+    // like: number;
 }

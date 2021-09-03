@@ -24,4 +24,7 @@ export class DogComponent implements OnInit {
   shoFav(): string[] {
     return this.user.dogsFav;
   }
-}
+//  addLike(): void {
+//    this.dog.like +=1;
+   
+ }
