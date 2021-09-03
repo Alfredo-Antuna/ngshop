@@ -5,7 +5,7 @@
     <th class="fs-2">Image</th>
     <th class="fs-2">Interact</th>
   </tr>
+  <tr *ngFor="let dog of dogs">
+    <app-dog [dog]="dog" [user]="user"></app-dog>
+  </tr>
 </table>
-<div *ngFor="let dog of dogs">
-  <app-dog [dog]="dog" [user]="user"></app-dog>
-</div>
