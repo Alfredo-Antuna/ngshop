@@ -1,7 +1,3 @@
-
-
-
-
 export class User {
   public dogsFav: string[];
 
@@ -10,9 +6,10 @@ export class User {
   }
 
   addFav(newFav: string): void {
-    if (this.dogsFav.length === 0 && !this.isRepeat(newFav)) {
+    if (this.dogsFav.length === 0 || !this.isRepeat(newFav)) {
       this.dogsFav.push(newFav);
     }
+    console.log("this is in func:", this.dogsFav);
   }
 
   isRepeat(favDog: string): boolean {

@@ -5,14 +5,7 @@
     <th class="fs-2">Image</th>
     <th class="fs-2">Interact</th>
   </tr>
-  <tr *ngFor="let dog of dogs">
-    <th>Name:{{ dog.name }}</th>
-    <th><img [src]="dog.image" class="w-6" /></th>
-    <td class="align-middle">
-      <button class="btn btn-secondary">Like</button>
-      <div></div>
-      
-      <button class="btn btn-primary">Favorite</button>
-    </td>
-  </tr>
 </table>
+<div *ngFor="let dog of dogs">
+  <app-dog [dog]="dog" [user]="user"></app-dog>
+</div>
